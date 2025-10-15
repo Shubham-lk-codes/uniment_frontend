@@ -11,7 +11,7 @@ import Blog from "./pages/Blog";
 function App() {
   return (
     <Router>
-      <div className="bg-black min-h-screen text-white">
+      <div className=" min-h-screen text-white">
         {/* Navigation Bar */}
         <nav className="flex justify-center gap-8 p-6 bg-gray-900 shadow-lg">
           <Link to="/" className="hover:text-blue-400 transition">Home</Link>
