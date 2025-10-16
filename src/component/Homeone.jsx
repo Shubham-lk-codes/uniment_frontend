@@ -29,7 +29,6 @@ function Homeone() {
 
     // Image animation — shrink & move to left
     tl.to(img, {
-        
       scale: 0.6,
       xPercent: -30,
       borderRadius: "20px",

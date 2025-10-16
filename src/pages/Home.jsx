@@ -60,6 +60,9 @@ export default function Home() {
 
   return (
     <div>
+      <div>
+        <video src=""></video>
+      </div>
       {/* 🌌 Slider Section */}
       <div className="bg-black text-white min-h-screen flex items-center justify-center relative overflow-hidden px-6">
         <div className="relative w-full max-w-[900px] h-[500px] overflow-hidden  shadow-2xl">
