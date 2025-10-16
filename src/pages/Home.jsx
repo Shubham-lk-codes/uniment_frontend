@@ -60,9 +60,27 @@ export default function Home() {
 
   return (
     <div>
-      <div>
-        <video src=""></video>
-      </div>
+      <div className="relative w-full h-screen overflow-hidden">
+  {/* Video */}
+  <video
+    src="/vid/one.mp4"
+    autoPlay
+    muted
+    loop
+    className="w-full h-full object-cover"
+  ></video>
+
+  {/* Overlay H1 text */}
+  <div className="absolute inset-0 flex items-center justify-center">
+    <h1 className="text-white text-4xl sm:text-6xl font-bold text-center px-4">
+      Helping industries outrun leaner and cleaner
+    </h1>
+  </div>
+
+  {/* Optional: Dark overlay to make text readable */}
+  <div className="absolute inset-0 bg-black/40"></div>
+</div>
+
       {/* 🌌 Slider Section */}
       <div className="bg-black text-white min-h-screen flex items-center justify-center relative overflow-hidden px-6">
         <div className="relative w-full max-w-[900px] h-[500px] overflow-hidden  shadow-2xl">
