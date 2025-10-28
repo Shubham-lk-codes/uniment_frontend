@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import gsap from "gsap";
+import { useNavigate } from "react-router-dom"; // 👈 for navigation
 import Homeone from "../component/Homeone";
 import Hometwo from "../component/Hometwo";
 
@@ -29,6 +30,7 @@ const cards = [
 
 export default function Home() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const navigate = useNavigate();
 
   // Auto-slide every 5 seconds
   useEffect(() => {
@@ -42,7 +44,7 @@ export default function Home() {
   const prevSlide = () =>
     setCurrentIndex((prev) => (prev - 1 + cards.length) % cards.length);
 
-  // GSAP text animation
+  // GSAP text animation for slider
   useEffect(() => {
     const tl = gsap.timeline();
     tl.fromTo(
@@ -58,10 +60,33 @@ export default function Home() {
     );
   }, [currentIndex]);
 
+  // GSAP intro animation for hero text
+  useEffect(() => {
+    const tl = gsap.timeline({ delay: 0.3 });
+    tl.fromTo(
+      ".hero-title",
+      { y: 60, opacity: 0 },
+      { y: 0, opacity: 1, duration: 1, ease: "power3.out" }
+    )
+      .fromTo(
+        ".hero-contact",
+        { y: 40, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        "-=0.4"
+      )
+      .fromTo(
+        ".hero-call",
+        { y: 40, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: "power3.out" },
+        "-=0.3"
+      );
+  }, []);
+
   return (
     <div>
+      {/* 🌅 Hero Section */}
       <div className="relative w-full h-screen overflow-hidden">
-        {/* Video */}
+        {/* Video Background */}
         <video
           src="/vid/one.mp4"
           autoPlay
@@ -70,20 +95,38 @@ export default function Home() {
           className="w-full h-full object-cover"
         ></video>
 
-        {/* Overlay H1 text */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl sm:text-6xl font-bold text-center px-4">
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40"></div>
+
+        {/* Text Overlay */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+          <h1 className="hero-title text-white text-4xl sm:text-6xl font-bold mb-6">
             Creative & Innovative Digital Solution
           </h1>
-        </div>
 
-        {/* Optional: Dark overlay to make text readable */}
-        <div className="absolute inset-0 bg-black/40"></div>
+          {/* Contact Us (Animated from below) */}
+          <motion.button
+            onClick={() => navigate("/contact")}
+            className="hero-contact text-lg sm:text-xl text-white font-medium underline hover:text-blue-400 transition-all mb-3"
+            whileHover={{ scale: 1.1 }}
+          >
+            Contact us
+          </motion.button>
+
+          {/* Book Consultancy Call (Animated from below) */}
+          <motion.p
+            className="hero-call text-white text-base sm:text-lg"
+            whileHover={{ scale: 1.05 }}
+          >
+            Book your consultancy call:{" "}
+            <span className="font-semibold">999999999</span>
+          </motion.p>
+        </div>
       </div>
 
       {/* 🌌 Slider Section */}
       <div className="bg-black text-white min-h-screen flex items-center justify-center relative overflow-hidden px-6">
-        <div className="relative w-full max-w-[900px] h-[500px] overflow-hidden  shadow-2xl">
+        <div className="relative w-full max-w-[900px] h-[500px] overflow-hidden shadow-2xl">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -124,7 +167,7 @@ export default function Home() {
             </motion.div>
           </AnimatePresence>
 
-          {/* 🌟 Navigation Arrows (bottom-right corner) */}
+          {/* 🌟 Navigation Arrows */}
           <div className="absolute bottom-6 right-6 flex gap-4 z-20">
             <button
               onClick={prevSlide}
