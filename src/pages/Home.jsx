@@ -73,7 +73,7 @@ export default function Home() {
         {/* Overlay H1 text */}
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl sm:text-6xl font-bold text-center px-4">
-            Helping industries outrun leaner and cleaner
+            Creative & Innovative Digital Solution
           </h1>
         </div>
 
