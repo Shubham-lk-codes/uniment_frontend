@@ -10,6 +10,17 @@ export default function ServiceDetail() {
   if (!service)
     return <div className="p-10 text-white">Service not found.</div>;
 
+  const expertiseItems = [
+  { title: "MarTech", img: "/img/martech.jpg" },
+  { title: "Data Provider", img: "/img/data.jpg" },
+  { title: "Stock Broker", img: "/img/stock.jpg" },
+  { title: "BFSI", img: "/img/bfsi.jpg" },
+  { title: "Healthcare", img: "/img/health.jpg" },
+  { title: "E-Commerce", img: "/img/ecom.jpg" },
+  { title: "Shipping & Container", img: "/img/ship.jpg" },
+];
+
+
   return (
     <div>
       <div className="p-10 text-white text-center">
@@ -370,6 +381,42 @@ export default function ServiceDetail() {
 
       </div>
     </div>
+       <section className="min-h-screen flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-20 bg-gradient-to-br from-[#f9f9ff] to-white">
+      {/* Left Section */}
+      <div className="w-full md:w-1/2 mb-10 md:mb-0">
+        <h2 className="text-4xl md:text-5xl font-semibold text-gray-800">
+          Our{" "}
+          <span className="bg-gradient-to-r from-sky-500 to-fuchsia-600 bg-clip-text text-transparent">
+            Expertise
+          </span>
+        </h2>
+        <p className="text-gray-600 mt-6 leading-relaxed max-w-md">
+          Discover insights and drive innovation with our streamlined data & AI
+          work process.
+        </p>
+      </div>
+
+      {/* Right Section - Grid */}
+      <div className="w-full md:w-1/2 grid grid-cols-2 sm:grid-cols-3 gap-4">
+        {expertiseItems.map((item, index) => (
+          <div
+            key={index}
+            className="relative rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300"
+          >
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="absolute bottom-3 left-3">
+              <h3 className="text-white text-lg font-semibold drop-shadow-md">
+                {item.title}
+              </h3>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
     </div>
   );
 }
