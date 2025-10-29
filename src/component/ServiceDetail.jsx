@@ -150,6 +150,226 @@ export default function ServiceDetail() {
           </div>
         </div>
       </div>
+       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto">
+        
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">How We Work</h1>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Wondering how we help our clients? Take a look at our team's process.
+          </p>
+        </div>
+
+        {/* Process Steps */}
+        <div className="space-y-12">
+          
+          {/* Step 1 */}
+          <div className="relative">
+            <div className="hidden lg:block absolute left-8 top-20 w-0.5 h-24 bg-gray-300 z-0"></div>
+            <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="p-8">
+                <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+                  
+                  {/* Number and Icon */}
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-blue-100 border border-blue-200 flex items-center justify-center">
+                      <span className="text-2xl font-bold text-blue-600">01</span>
+                    </div>
+                    
+                    {/* Mobile Icon */}
+                    <div className="lg:hidden p-3 rounded-xl bg-blue-100">
+                      <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1">
+                    <div className="flex items-center gap-4 mb-4">
+                      
+                      {/* Desktop Icon */}
+                      <div className="hidden lg:block p-3 rounded-xl bg-blue-100">
+                        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                      </div>
+                      
+                      <h2 className="text-2xl font-bold text-gray-900">
+                        Discovery And Planning
+                      </h2>
+                    </div>
+                    
+                    <p className="text-gray-600 leading-relaxed">
+                      We initiate the process by effective collaboration to gain a deep understanding of your business objectives, target audience, and project requirements and then focus on building a strategic roadmap.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 2 */}
+          <div className="relative">
+            <div className="hidden lg:block absolute left-8 top-20 w-0.5 h-24 bg-gray-300 z-0"></div>
+            <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="p-8">
+                <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+                  
+                  {/* Number and Icon */}
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-green-100 border border-green-200 flex items-center justify-center">
+                      <span className="text-2xl font-bold text-green-600">02</span>
+                    </div>
+                    
+                    {/* Mobile Icon */}
+                    <div className="lg:hidden p-3 rounded-xl bg-green-100">
+                      <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1">
+                    <div className="flex items-center gap-4 mb-4">
+                      
+                      {/* Desktop Icon */}
+                      <div className="hidden lg:block p-3 rounded-xl bg-green-100">
+                        <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>
+                      </div>
+                      
+                      <h2 className="text-2xl font-bold text-gray-900">
+                        Design And Development
+                      </h2>
+                    </div>
+                    
+                    <p className="text-gray-600 leading-relaxed">
+                      Based on the planning and discovery, our skilled designers work on wireframes and prototypes to visualize the final website, incorporating the brand identity and user experience principles. Our expert web developers bring the design to life, utilizing clean coding practices, responsive frameworks, and robust backend systems to deliver a high-performing website.
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 3 */}
+          <div className="relative">
+            <div className="hidden lg:block absolute left-8 top-20 w-0.5 h-24 bg-gray-300 z-0"></div>
+            <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="p-8">
+                <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+                  
+                  {/* Number and Icon */}
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-purple-100 border border-purple-200 flex items-center justify-center">
+                      <span className="text-2xl font-bold text-purple-600">03</span>
+                    </div>
+                    
+                    {/* Mobile Icon */}
+                    <div className="lg:hidden p-3 rounded-xl bg-purple-100">
+                      <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1">
+                    <div className="flex items-center gap-4 mb-4">
+                      
+                      {/* Desktop Icon */}
+                      <div className="hidden lg:block p-3 rounded-xl bg-purple-100">
+                        <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                      </div>
+                      
+                      <h2 className="text-2xl font-bold text-gray-900">
+                        Testing And Optimization
+                      </h2>
+                    </div>
+                    
+                    <p className="text-gray-600 leading-relaxed">
+                      Our skilled team conducts rigorous testing to identify and resolve any potential issues. Through meticulous optimization, we aim to deliver optimal
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Step 4 */}
+          <div className="relative">
+            <div className="relative bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100">
+              <div className="p-8">
+                <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
+                  
+                  {/* Number and Icon */}
+                  <div className="flex items-center gap-4">
+                    <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-orange-100 border border-orange-200 flex items-center justify-center">
+                      <span className="text-2xl font-bold text-orange-600">04</span>
+                    </div>
+                    
+                    {/* Mobile Icon */}
+                    <div className="lg:hidden p-3 rounded-xl bg-orange-100">
+                      <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                      </svg>
+                    </div>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex-1">
+                    <div className="flex items-center gap-4 mb-4">
+                      
+                      {/* Desktop Icon */}
+                      <div className="hidden lg:block p-3 rounded-xl bg-orange-100">
+                        <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                        </svg>
+                      </div>
+                      
+                      <h2 className="text-2xl font-bold text-gray-900">
+                        Deployment And Support
+                      </h2>
+                    </div>
+                    
+                    <p className="text-gray-600 leading-relaxed">
+                      We provide end-to-end support during the deployment phase, ensuring a smooth and seamless launch of your web application. Great remains
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <div className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl mx-auto border border-gray-100">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              Ready to Start Your Project?
+            </h3>
+            <p className="text-gray-600 mb-6">
+              Let's work together to bring your vision to life with our proven process.
+            </p>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-xl transition-colors duration-300">
+              Get Started
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
     </div>
   );
 }
