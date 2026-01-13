@@ -51,7 +51,8 @@ export default function About() {
   }, []);
 
   return (
-    <section
+    <>
+     <section
       ref={sectionRef}
       className="relative h-screen w-full flex flex-col items-center justify-center overflow-hidden bg-black text-white"
     >
@@ -103,6 +104,31 @@ export default function About() {
           content marketing.
         </p>
       </motion.div>
+     
     </section>
+
+     <div className="text-black">
+        <div>
+          <h1>sapan Sharma</h1>
+          <p>CEO of uniment solution</p>
+        </div>
+        <div>
+          <img src="/img/sapan_sharma.jpeg" alt=" ceo" />
+        </div>
+        
+      </div>
+       <div>
+        <div>
+          <h1>saurab Sharma</h1>
+          <p>founder of uniment solution</p>
+        </div>
+        <div>
+          <img src="/img/saurab_sharma.jpeg" alt=" ceo" />
+        </div>
+        
+      </div>
+    </>
+   
+    
   );
 }
